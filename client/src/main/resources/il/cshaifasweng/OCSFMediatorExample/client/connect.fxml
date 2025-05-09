@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="il.cshaifasweng.OCSFMediatorExample.client.ConnectController"
+      alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+    <Label text="Connect to Server" style="-fx-font-size: 20px;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="IP:"/>
+        <TextField fx:id="ipField" text="localhost" prefWidth="120"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Port:"/>
+        <TextField fx:id="portField" text="3000" prefWidth="80"/>
+    </HBox>
+
+    <Button text="Connect" onAction="#onConnect"/>
+    <Label fx:id="errorLabel" textFill="red"/>
+</VBox>
